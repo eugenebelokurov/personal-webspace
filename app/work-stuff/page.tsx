@@ -1,24 +1,6 @@
 import Link from "next/link";
 
-async function getWorkStuff() {
-
-    //TODO: get dir as a parameter
-    const dir = "app/work-stuff/posts"
-
-    //TODO: get list of files in dir
-    const listOfWorkStuff = ["post-one.mdx", "post-two.mdx"]
-
-    const postPromises = listOfWorkStuff.map(async(post) => {
-        let postContent = await import(`./posts/${post}`)
-        let metadata = postContent.metadata
-        let pagename = post.replace(".mdx", "")
-        let slug = `/work-stuff/${pagename}`
-        return {metadata, slug}
-    })
-
-    //TODO: any ways not to use Promise?
-    return Promise.all(postPromises)
-}
+import { getWorkStuff } from "./utils";
 
 export default async function WorkStuff() {
 

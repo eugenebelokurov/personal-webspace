@@ -4,6 +4,9 @@ import Notes from "./notes.webp";
 import Work from "./work.webp";
 import Public from "./public.webp";
 
+import WorkStuffOnMainPage from "./components/work-stuff-on-main-page";
+import PublicProfile from "./components/public-profile";
+
 export default function Home() {
   return (
     <div className="p-4 h-screen">
@@ -35,6 +38,7 @@ export default function Home() {
               height={70}
             />
           </div>
+          <WorkStuffOnMainPage />
         </div>
         <div className="col-span-5">
           <div className="flex flex-row justify-between border-b-2 border-black">
@@ -45,6 +49,7 @@ export default function Home() {
               height={70}
             />
           </div>
+          <PublicProfile />
         </div>
       </main>
     </div>

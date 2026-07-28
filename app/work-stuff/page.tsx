@@ -8,6 +8,11 @@ export default async function WorkStuff() {
 
     return (
         <div>
+            <Link
+                href="/"
+            >
+                ← To home page
+            </Link>
             <h1>My case studies</h1>
             <div
                 className="flex flex-col gap-2"

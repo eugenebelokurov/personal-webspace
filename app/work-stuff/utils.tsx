@@ -6,7 +6,7 @@ function getMDXFiles(dir: string) {
 }
 
 //TODO: return ordered from newest to oldest
-export async function getWorkStuff() {
+export async function getWorkStuff(numberOfPosts?: number) {
 
     //TODO: get dir as a parameter
     const dir = "app/work-stuff/posts"
@@ -22,5 +22,15 @@ export async function getWorkStuff() {
     })
 
     //TODO: any ways not to use Promise?
-    return Promise.all(postPromises)
+    const postsList = await Promise.all(postPromises)
+
+    const sortedPostsList = postsList.sort((a, b) => {
+        return new Date(b.metadata.dateCreated).getTime() - new Date(a.metadata.dateCreated).getTime()
+    })
+
+    if(numberOfPosts) {
+        return sortedPostsList.slice(0, numberOfPosts)
+    }
+
+    return sortedPostsList
 }

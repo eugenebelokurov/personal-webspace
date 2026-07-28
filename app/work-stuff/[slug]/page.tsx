@@ -7,7 +7,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string}
 
 //TODO: can I automatically generate the list of slugs?
 export function generateStaticParams() {
-    return [{slug: "post-one"}, {slug: "post-two"}]
+    return [{slug: "post-one"}, {slug: "post-two"}, {slug: "post-three"}, {slug: "four"}, {slug: "post-five"}]
 }
 
 export const dynamicParams = false

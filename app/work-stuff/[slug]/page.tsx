@@ -1,3 +1,6 @@
+import fs from "fs";
+import path from "path";
+
 export default async function Page({ params }: { params: Promise<{ slug: string}> }) {
     const { slug } = await params
     const {default: Post} = await import(`../../work-stuff/posts/${slug}.mdx`)
@@ -5,9 +8,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string}
     return <Post />
 }
 
-//TODO: can I automatically generate the list of slugs?
 export function generateStaticParams() {
-    return [{slug: "post-one"}, {slug: "post-two"}, {slug: "post-three"}, {slug: "four"}, {slug: "post-five"}]
+    const posts = fs.readdirSync("app/work-stuff/posts").filter((file) => path.extname(file) === ".mdx")
+    const postsSlugs = posts.map((post) => post.replace(".mdx",""))
+
+    return postsSlugs.map((slug) => ({slug}))
 }
 
 export const dynamicParams = false

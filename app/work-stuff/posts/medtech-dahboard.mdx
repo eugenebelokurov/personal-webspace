@@ -1,8 +1,15 @@
+import CaseImage from "../../components/case-image"
+
+import DashboardImage from "./dashboard.png"
+import FilerImage from "./filters-and-how-they-work.png"
+
 export const metadata ={
     title: "Design that builds trust between doctors and AI",
     dateCreated: "2025-12-02",
     dateLastUpdated: "2026 May 05",
 }
+
+
 
 
 # {metadata.title}
@@ -25,6 +32,13 @@ To prevent that, clinics implement quality assurance practices. Usually, about 1
 
 This is where the product comes in. It analyses 100% of all protocols across 300 parameters, ranging from ones impacting treatment to formatting issues.
 
+<CaseImage
+  src={FilerImage.src}
+  width={FilerImage.width}
+  height={FilerImage.height}
+  caption={"filters"}
+/>
+
 ## Problem
 - **Information architecture issues.** Key information missing or hidden, 
 - **Non-actionable AI recommendations.** With AI labels like “good quality” or “critical quality”, doctors didn’t know how to prioritise notes to be looked at.
@@ -34,6 +48,13 @@ This is where the product comes in. It analyses 100% of all protocols across 300
 Dashboard before and after
 {/* <ImageContainerMdx projectId={5} imageId="old-dashboard" captionShow={true} /> */}
 {/* <ImageContainerMdx projectId={5} imageId="dashboard-id" captionShow={true} /> */}
+
+<CaseImage
+  src={DashboardImage.src}
+  width={DashboardImage.width}
+  height={DashboardImage.height}
+  caption={"dashboard"}
+/>
 
 
 Patient notes before and after

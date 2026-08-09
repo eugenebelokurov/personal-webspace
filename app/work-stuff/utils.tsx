@@ -2,7 +2,10 @@ import fs from "fs";
 import path from "path";
 
 function getMDXFiles(dir: string) {
-    return fs.readdirSync(dir)
+    const files = fs.readdirSync(dir)
+        .filter((file) => path.extname(file) === ".mdx")
+
+    return files
 }
 
 //TODO: return ordered from newest to oldest
@@ -11,7 +14,8 @@ export async function getWorkStuff(numberOfPosts?: number) {
     //TODO: get dir as a parameter
     const dir = "app/work-stuff/posts"
 
-    const listOfWorkStuff = getMDXFiles(dir).filter((file) => path.extname(file) === ".mdx")
+    const listOfWorkStuff = getMDXFiles(dir)
+    console.log(listOfWorkStuff)
 
     const postPromises = listOfWorkStuff.map(async(post) => {
         let postContent = await import(`./posts/${post}`)

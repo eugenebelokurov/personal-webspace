@@ -7,12 +7,14 @@ export default async function WorkStuff() {
     const workStuffPosts = await getWorkStuff()
 
     return (
-        <div>
-            <Link
-                href="/"
-            >
-                ← To home page
-            </Link>
+        <div
+            className="mx-auto my-10 max-w-2xl flex flex-col gap-4"
+        >
+            <div className="flex flex-row gap-1">
+                <Link href="/">Home</Link>
+                <p>/</p>
+                <p className="text-[#1AA809]">All cases</p>
+            </div> 
             <h1>My case studies</h1>
             <div
                 className="flex flex-col gap-2"
@@ -23,7 +25,9 @@ export default async function WorkStuff() {
                         >
                             <div className = "flex flex-row gap-2">
                                 <p>{post.metadata.title}</p>
-                                <p>{post.metadata.dateCreated}</p>
+                                <p
+                                    className="text-gray-500"
+                                >{post.metadata.dateCreated}</p>
                             </div>
                         </Link>
                 ))}

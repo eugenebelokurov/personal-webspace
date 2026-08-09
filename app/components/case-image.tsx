@@ -10,10 +10,10 @@ interface CaseImageProps {
 export default function CaseImage({ src, width, height, caption} : CaseImageProps) {
     return(
         <div
-            className="mb-10"
+            className="my-10"
         >
             <div
-                 className="mb-4 p-8 border-2 border-gray-200 bg-gray-50 rounded-xl"
+                 className="mb-2 p-8 border-[1px] border-[#E3E3E0] rounded-md"
             >
                 <Image
                     src={src}
@@ -23,7 +23,7 @@ export default function CaseImage({ src, width, height, caption} : CaseImageProp
                 />
             </div>
             <p
-                className="text-gray-500 px-4"
+                className="text-[#787876] text-center text-[14px] font-medium"
             >
                 {caption}
             </p>

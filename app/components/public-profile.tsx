@@ -1,11 +1,13 @@
 export default function PublicProfile() {
     return (
-        <ul>
-            <li><ExternalLink href="https://www.are.na/eugene-belokurov/channels" label="are.na"/></li>
-            <li><ExternalLink href="https://www.instagram.com/evgenybelokurov/" label="instagram"/></li>
-            <li><ExternalLink href="https://www.linkedin.com/in/eugenebelokurov/" label="linkedin"/></li>
-            <li><ExternalLink href="https://github.com/eugenebelokurov" label="github"/></li>
-        </ul>
+        <div className="flex flex-col gap-4 my-4">
+            <ul>
+                <li><ExternalLink href="https://www.are.na/eugene-belokurov/channels" label="are.na"/></li>
+                <li><ExternalLink href="https://www.instagram.com/evgenybelokurov/" label="instagram"/></li>
+                <li><ExternalLink href="https://www.linkedin.com/in/eugenebelokurov/" label="linkedin"/></li>
+                <li><ExternalLink href="https://github.com/eugenebelokurov" label="github"/></li>
+            </ul>
+        </div>
     )
 }
 

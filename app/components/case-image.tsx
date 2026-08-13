@@ -4,7 +4,7 @@ interface CaseImageProps {
     src: string,
     width: number,
     height: number,
-    caption: string
+    caption?: string
 }
 
 export default function CaseImage({ src, width, height, caption} : CaseImageProps) {
@@ -19,7 +19,7 @@ export default function CaseImage({ src, width, height, caption} : CaseImageProp
                     src={src}
                     width={width}
                     height={height}
-                    alt={caption}
+                    alt={caption || "Image without a caption"}
                 />
             </div>
             <p

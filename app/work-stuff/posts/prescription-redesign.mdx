@@ -1,3 +1,15 @@
+import CaseImage from "../../components/case-image"
+
+import AfterImage from "../files/prescription-redesign/after.png"
+import BeforeImage from "../files/prescription-redesign/before.png"
+import CoverWoBgImage from "../files/prescription-redesign/cover-wo-bg.png"
+import CoverImage from "../files/prescription-redesign/cover.png"
+import MyProcessImage from "../files/prescription-redesign/my-process.png"
+import OldFlowImage from "../files/prescription-redesign/old-flow.png"
+import OnboardingMainSectionImage from "../files/prescription-redesign/onboarding-main-section.png"
+import PrescriptionProcessImage from "../files/prescription-redesign/prescription-process.png"
+import ProductAuditImage from "../files/prescription-redesign/product-audit.png"
+
 export const metadata ={
     title: "Redesigning prescription platform used by 6,000 doctors",
     dateCreated: "2025-12-02",
@@ -8,9 +20,12 @@ export const metadata ={
 
 Medtech startup needed to redesign their core product to better serve doctors' workflows. The product was hard to use and was more time-consuming than traditional solutions. Through user research analysis and iterative prototyping, I redesigned the information architecture around a central card concept and introduced smart search and filtering. The solution was approved by senior team and is about to be tested with doctors.
 
-{/* <div className="border border-gray-200 rounded-md p-4 bg-white flex justify-center items-center xl:-mx-48 my-12">
-  <Image src="/images/medtech-prescriptions/cover-wo-bg.png" alt="Word Embeddings" width="1900" height="400"/>
-</div> */}
+<CaseImage
+  src={CoverWoBgImage.src}
+  width={CoverWoBgImage.width}
+  height={CoverWoBgImage.height}
+/>
+
 
 - my role: defined information architecture, coded interactive prototype
 - team: me, 1 product owner
@@ -38,34 +53,70 @@ With that in mind, I redesigned the entire information architecture around a one
 
 This how the interface looked before
 
-{/* <ImageContainerMdx projectId={6} imageId="old-flow" captionShow={true} /> */}
+<CaseImage
+  src={OldFlowImage.src}
+  width={OldFlowImage.width}
+  height={OldFlowImage.height}
+  caption={"Before: several steps and many clicks"}
+/>
+
 
 And this is what we ended up with
 
-{/* <ImageContainerMdx projectId={6} imageId="after" captionShow={true} /> */}
+<CaseImage
+  src={AfterImage.src}
+  width={AfterImage.width}
+  height={AfterImage.height}
+  caption={"After: everything within one window"}
+/>
+
 
 ## Process
 
 I started with auditing current and previous versions of the product. It is blurred for privacy reasons, but you can see blue and red blobs. These are my questions about why certain things work like that. Result: I understand how the product works.
 
-{/* <ImageContainerMdx projectId={6} imageId="product-audit" captionShow={true} /> */}
+<CaseImage
+  src={ProductAuditImage.src}
+  width={ProductAuditImage.width}
+  height={ProductAuditImage.height}
+  caption={"User journey analysis in the old product"}
+/>
+
 
 The team had already run user research to collect feedback about the current product. The anonymous survey holds feedback from doctors using product daily: how often they use it, what they like, what they don't like. Analysing the document gave me an understanding of the most burning issues (listed in "Problems" section).
 
 After digesting all this information I suggested the new foundational logic: "When a doctor opens our product, they already have treatments/diagnostics in mind. We should allow them to add items straight away."
 
-{/* <ImageContainerMdx projectId={6} imageId="prescription-process" captionShow={true} /> */}
+<CaseImage
+  src={PrescriptionProcessImage.src}
+  width={PrescriptionProcessImage.width}
+  height={PrescriptionProcessImage.height}
+  caption={"Process of prescribing"}
+/>
+
 
 Implementation-wise, my process looked like this
 
-{/* <ImageContainerMdx projectId={6} imageId="my-process" captionShow={true} /> */}
+<CaseImage
+  src={MyProcessImage.src}
+  width={MyProcessImage.width}
+  height={MyProcessImage.height}
+  caption={"From ideation to working prototype"}
+/>
+
 
 This is how the new product will be structured. Key sections:
 1. **Functional sidebar.** Here live most importantly templates and all secondary actions, they might be useful but are secondary nevertheless.
 2. **Section where you add prescriptions.** The key part of the interface. Here, doctors adds what will be prescribed to a patient.
 3. **List of all diagnostics and treatments.** When necessary, a doctor can consult with all the diagnostics and treatments recommended based on the condition of a patient.
 
-{/* <ImageContainerMdx projectId={6} imageId="onboarding-main-section" captionShow={true} /> */}
+<CaseImage
+  src={OnboardingMainSectionImage.src}
+  width={OnboardingMainSectionImage.width}
+  height={OnboardingMainSectionImage.height}
+  caption={"Main parts of the interface"}
+/>
+
 
 There are three ways to add prescriptions. 
 
@@ -108,5 +159,3 @@ Or you can use template for the most common cases.
 ## Results
 - Senior team buy-in: Approved innovative approach despite initial conservatism
 - User-testing ready: Interactive prototype delivered for development
-
-{/* <OtherWork currentSlug="work-prescription-redesign"/> */}

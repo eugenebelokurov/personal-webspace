@@ -1,7 +1,18 @@
 import CaseImage from "../../components/case-image"
+import CaseVideo from "../../components/case-video"
 
+import CoverImage from "../files/medtech-dashboard/cover.png"
 import DashboardImage from "../files/medtech-dashboard/dashboard.png"
-import FilerImage from "../files/medtech-dashboard/filters-and-how-they-work.png"
+import DashboardWithCommentsImage from "../files/medtech-dashboard/dashboard-with-comments.png"
+import FilersHowWorkImage from "../files/medtech-dashboard/filters-and-how-they-work.png"
+import HeaderBeforeAfterImage from "../files/medtech-dashboard/header-before-and-after.png"
+import OldDashboardImage from "../files/medtech-dashboard/old-dashboard.png"
+import PatientNotesBeforeImage from "../files/medtech-dashboard/patient-notes-before.png"
+import PatientNotesImage from "../files/medtech-dashboard/patient-notes.png"
+import StructureProtocolImage from "../files/medtech-dashboard/structure-of-protocol-page.png"
+
+import FilterInActonVideo from "../files/medtech-dashboard/filter-in-action.mp4"
+import FilterInActonPublicVideo from "../../../public/filter-in-action.mp4"
 
 export const metadata ={
     title: "Design that builds trust between doctors and AI",
@@ -13,6 +24,12 @@ export const metadata ={
 # {metadata.title}
 
 I helped early-stage medtech startup to redesign one of their core products. The company built proof of concept using no-code tool and was ready for the next step. I joined the team to identify usability issues and make the product look smart and trustworthy. With insights from doctors and the team, I rebuilt the product from the ground up: new information architecture, explanations of AI recommendations and new visual language. As a result, I delivered an interactive prototype using Next.js.
+
+<CaseImage
+  src={PatientNotesImage.src}
+  width={PatientNotesImage.width}
+  height={PatientNotesImage.height}
+/>
 
 {/* <div className="border border-gray-200 rounded-md p-4 bg-white flex justify-center items-center xl:-mx-48 my-12">
   <Image src="/images/medtech-case/patient-notes.png" alt="Word Embeddings" width="1900" height="400"/>
@@ -30,12 +47,6 @@ To prevent that, clinics implement quality assurance practices. Usually, about 1
 
 This is where the product comes in. It analyses 100% of all protocols across 300 parameters, ranging from ones impacting treatment to formatting issues.
 
-<CaseImage
-  src={FilerImage.src}
-  width={FilerImage.width}
-  height={FilerImage.height}
-  caption={"Filters"}
-/>
 
 ## Problem
 - **Information architecture issues.** Key information missing or hidden, 
@@ -44,20 +55,36 @@ This is where the product comes in. It analyses 100% of all protocols across 300
 
 ## Solution
 Dashboard before and after
-{/* <ImageContainerMdx projectId={5} imageId="old-dashboard" captionShow={true} /> */}
-{/* <ImageContainerMdx projectId={5} imageId="dashboard-id" captionShow={true} /> */}
+
+<CaseImage
+  src={OldDashboardImage.src}
+  width={OldDashboardImage.width}
+  height={OldDashboardImage.height}
+  caption={"Dashboard before"}
+/>
 
 <CaseImage
   src={DashboardImage.src}
   width={DashboardImage.width}
   height={DashboardImage.height}
-  caption={"Dashboard"}
+  caption={"Dashboard after"}
 />
 
-
 Patient notes before and after
-{/* <ImageContainerMdx projectId={5} imageId="patient-notes-before-id" captionShow={true} /> */}
-{/* <ImageContainerMdx projectId={5} imageId="patient-notes-id" captions="After" captionShow={true} /> */}
+
+<CaseImage
+  src={PatientNotesBeforeImage.src}
+  width={PatientNotesBeforeImage.width}
+  height={PatientNotesBeforeImage.height}
+  caption={"Patient before"}
+/>
+
+<CaseImage
+  src={PatientNotesImage.src}
+  width={PatientNotesImage.width}
+  height={PatientNotesImage.height}
+  caption={"Patient after"}
+/>
 
 ## Metrics
 We settled on tracking the “trustworthiness” and a number of new deals closed.
@@ -66,7 +93,18 @@ We settled on tracking the “trustworthiness” and a number of new deals close
 
 I have run interviews and closed card sorting research with doctors to gather insights and decide on information architecture.
 
-{/* <ImageContainerMdx projectId={5} imageId="dashboard-with-comments-id" captionShow={true} /> */}
+<CaseImage
+  src={DashboardWithCommentsImage.src}
+  width={DashboardWithCommentsImage.width}
+  height={DashboardWithCommentsImage.height}
+  caption={"Structure of the dashboard"}
+/>
+
+
+<CaseVideo
+  src="../../../public/filter-in-action.mp4"
+  caption="Here is the video"
+/>
 
 {/* <div className="flex flex-col xl:-mx-48 my-12">
   <div className="border border-gray-200 rounded-md p-4 bg-white flex justify-center items-center">
@@ -79,12 +117,32 @@ I have run interviews and closed card sorting research with doctors to gather in
 </div> */}
 
 The most used filters are always displayed. Doctors get feedback about the number of records.
-{/* <ImageContainerMdx projectId={5} imageId="filters-and-how-they-work-id" captions="After" captionShow={true} /> */}
+
+<CaseImage
+  src={FilersHowWorkImage.src}
+  width={FilersHowWorkImage.width}
+  height={FilersHowWorkImage.height}
+  caption={"The logic of the filters"}
+/>
+
 
 Structure of the protofol page: header with key info, original notes from the assesment, AI feedback
-{/* <ImageContainerMdx projectId={5} imageId="structure-of-protocol-page-id" captionShow={true} /> */}
+
+<CaseImage
+  src={StructureProtocolImage.src}
+  width={StructureProtocolImage.width}
+  height={StructureProtocolImage.height}
+  caption={"Structure of the protocol page"}
+/>
 
 The header was redesigned based on a card sorting exercise: doctors had to prioritise what information should be available immediately, could be one+ click away or unnecessary.
+
+<CaseImage
+  src={HeaderBeforeAfterImage.src}
+  width={HeaderBeforeAfterImage.width}
+  height={HeaderBeforeAfterImage.height}
+  caption={"Header before and after"}
+/>
 
 {/* <ImageContainerMdx projectId={5} imageId="header-before-and-after-id" captionShow={true} /> */}
 

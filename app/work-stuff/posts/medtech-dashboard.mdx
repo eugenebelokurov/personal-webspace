@@ -11,10 +11,7 @@ import PatientNotesBeforeImage from "../files/medtech-dashboard/patient-notes-be
 import PatientNotesImage from "../files/medtech-dashboard/patient-notes.png"
 import StructureProtocolImage from "../files/medtech-dashboard/structure-of-protocol-page.png"
 
-import FilterInActonVideo from "../files/medtech-dashboard/filter-in-action.mp4"
-import FilterInActonPublicVideo from "../../../public/filter-in-action.mp4"
-
-export const metadata ={
+export const metadata = {
     title: "Design that builds trust between doctors and AI",
     dateCreated: "2025-12-02",
     dateLastUpdated: "2026 May 05",
@@ -102,19 +99,9 @@ I have run interviews and closed card sorting research with doctors to gather in
 
 
 <CaseVideo
-  src="../../../public/filter-in-action.mp4"
+  src="/medtech-dashboard/filter-in-action.mp4"
   caption="Here is the video"
 />
-
-{/* <div className="flex flex-col xl:-mx-48 my-12">
-  <div className="border border-gray-200 rounded-md p-4 bg-white flex justify-center items-center">
-    <video className="rounded-md" width="1200" height="400" preload="auto" autoPlay loop muted playsinline>
-      <source src="/images/medtech-case/filter-in-action.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <p className="text-gray-600 indent-4 text-[14px] mt-1">Filters in action</p>
-</div> */}
 
 The most used filters are always displayed. Doctors get feedback about the number of records.
 
@@ -143,7 +130,5 @@ The header was redesigned based on a card sorting exercise: doctors had to prior
   height={HeaderBeforeAfterImage.height}
   caption={"Header before and after"}
 />
-
-{/* <ImageContainerMdx projectId={5} imageId="header-before-and-after-id" captionShow={true} /> */}
 
 {/* <OtherWork currentSlug="work-medtech"/> */}

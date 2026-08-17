@@ -5,11 +5,21 @@ interface CaseVideoProps {
 
 export default function CaseVideo( { src, caption="" }: CaseVideoProps) {
     return(
-        <div>
-            <video className="border border-amber-400">
-                <source src={src} type="video/mp4"/>
+        <div
+            className="my-10"
+        >
+            <div
+                className="mb-2 border-[1px] border-[#E3E3E0] rounded-md"
+            >
+            <video autoPlay playsInline loop muted>
+                <source src={src} type="video/mp4" />
             </video>
-            <p>{caption}</p>
+            </div>
+            <p
+                className="text-[#787876] text-center text-[14px] font-medium"
+            >
+                {caption}
+            </p>
         </div>
     )
 }

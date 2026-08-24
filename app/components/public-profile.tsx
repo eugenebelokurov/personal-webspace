@@ -4,14 +4,14 @@ import Public from "../files/public.webp"
 
 export default function PublicProfile() {
     return (
-        <div className="col-span-5">
+        <div className="md:col-span-5">
             <div className="flex flex-row justify-between border-b-2 border-black">
-                <p>public profile</p>
                 <Image 
                     src={Public}
                     alt="Public image"
-                    height={70}
+                    height={64}
                 />
+                <p>public profile</p>
             </div>
             <div>
                 <div className="flex flex-row w-full gap-4 my-4">

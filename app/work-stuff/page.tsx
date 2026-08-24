@@ -8,7 +8,7 @@ export default async function WorkStuff() {
 
     return (
         <div
-            className="mx-auto my-10 max-w-2xl flex flex-col gap-4"
+            className="mx-auto my-10 max-w-2xl flex flex-col gap-4 px-2"
         >
             <div className="flex flex-row gap-1">
                 <Link href="/">Home</Link>

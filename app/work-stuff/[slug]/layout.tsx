@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function PostLayout({children}: {children: React.ReactNode}) {
     return (
         <div
-            className="mx-auto max-w-2xl my-10"
+            className="mx-auto max-w-2xl my-10 px-2"
         >
             <div className="flex flex-row gap-1">
                 <Link href="/">Home</Link>

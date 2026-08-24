@@ -10,8 +10,8 @@ export default async function WorkStuff() {
     const workStuff = await getWorkStuff(3)
 
     return (
-        <div className="col-span-5 pr-2 h-screen overflow-auto">
-          <div className="flex flex-row justify-between border-b-2 border-black">
+        <div className="col-span-5 pr-2 h-full overflow-auto">
+          <div className="flex flex-row justify-between border-b-2 border-black sticky top-0 bg-[#ffffff]">
             <p>work stuff</p>
             <Image 
               src={Work}

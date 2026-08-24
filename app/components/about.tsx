@@ -4,7 +4,7 @@ import EugeneProfile from "../files/eugene-profile.webp";
 
 export default function About() {
     return (
-        <div className="col-span-3 pr-4 h-screen">
+        <div className="col-span-3 pr-4 h-full">
             <div className="flex flex-col justify-between h-full">
                 <div>
                     <p className="pb-2">you landed in my personal space in the internet</p>

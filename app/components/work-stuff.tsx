@@ -34,7 +34,7 @@ export default async function WorkStuff() {
             <div className="flex flex-col gap-4">
                 {
                     workStuff.map((post) => (
-                        <CaseStudy href={post.slug} title={post.metadata.title} cover={post.metadata.cover}/>
+                        <CaseStudy key={post.slug} href={post.slug} title={post.metadata.title} cover={post.metadata.cover}/>
                     ))
                 }
             </div>

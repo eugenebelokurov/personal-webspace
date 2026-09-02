@@ -21,6 +21,7 @@ export default async function WorkStuff() {
             >
                 {workStuffPosts.map((post) => (
                         <Link
+                            key={post.slug}
                             href={post.slug}
                         >
                             <div className = "flex flex-row gap-2">

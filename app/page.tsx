@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Public from "./public.webp";
-
 import PublicProfile from "./components/public-profile";
 import About from "./components/about"
 import NotesThoughts from "./components/notes-thoughts"

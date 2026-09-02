@@ -18,10 +18,10 @@ export async function getWorkStuff(numberOfPosts?: number) {
     console.log(listOfWorkStuff)
 
     const postPromises = listOfWorkStuff.map(async(post) => {
-        let postContent = await import(`./posts/${post}`)
-        let metadata = postContent.metadata
-        let pagename = post.replace(".mdx", "")
-        let slug = `/work-stuff/${pagename}`
+        const postContent = await import(`./posts/${post}`)
+        const metadata = postContent.metadata
+        const pagename = post.replace(".mdx", "")
+        const slug = `/work-stuff/${pagename}`
         return {metadata, slug}
     })
 

@@ -4,8 +4,7 @@ import Image from 'next/image'
 interface CaseStudyProps {
     href: string,
     title: string,
-    // make sure the cover is stored in 'public/' folder
-    cover?: string,
+    cover?: string, // make sure the cover is stored in 'public/' folder
 }
 
 export default function CaseStudy({ href, title, cover } : CaseStudyProps) {

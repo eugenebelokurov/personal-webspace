@@ -14,16 +14,15 @@ export default function About() {
                             className="py-2"
                         />
                     <p className="mb-2">
-                        things i’m interested at currently: getting better at my job, supporting my wife at 
-                        getting msc degree, swimming, finding my style.
+                        things i’m interested at currently: getting better at my job, supporting <a href="https://www.lanaurbanlab.com/" target="_blank" className="underline underline-offset-4 mb-2">my wife</a> at getting msc degree, swimming, finding my style.
                     </p>
                     <p className="mb-2">
                         this is very much work in progress
                     </p>
                 </div>
                 <div className="hidden md:flex md:flex-col">
-                    <p className="mb-2">made by me using ♡, HTML, CSS and JS</p>
-                    <p className="mb-2">last updated: August 2026</p>
+                    <p className="mb-2">made by hand using ♡, HTML, CSS and JS</p>
+                    <p className="mb-2">last updated: September 2026</p>
                 </div>
             </div>
         </div>

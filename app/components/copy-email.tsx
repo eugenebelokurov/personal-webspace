@@ -11,7 +11,7 @@ export default function CopyEmailButton() {
 
   return (
     <button 
-      className="inline underline decoration-dotted"
+      className="inline underline underline-offset-4 decoration-dotted"
       onClick={handleCopyEmail}
       id="emailButton"
     >

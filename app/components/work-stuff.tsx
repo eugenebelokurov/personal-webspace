@@ -25,7 +25,7 @@ export default async function WorkStuff() {
               here I list selected work which should give you a glimpse into my process and ui skills. 
               i’m always happy to chat with new people, whether you already work on something, or toying with ideas. 
               list of my services should serve as a good conversation starter. 
-              grab <a target="_blank" href="/eugene-cv.pdf" className="underline decoration-dotted">my cv</a> or <CopyEmailButton/>.
+              grab <a target="_blank" href="/eugene-cv.pdf" className="underline underline-offset-4 decoration-dotted">my cv</a> or <CopyEmailButton/>.
             </p>
               <div
                 className="border-t border-1 border-dashed border-neutral-600"

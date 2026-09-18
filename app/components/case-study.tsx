@@ -22,7 +22,7 @@ export default function CaseStudy({ href, title, cover } : CaseStudyProps) {
                 height={500}
             />
             }
-            <p className="underline">read more</p>
+            <p className="underline underline-offset-4 mb-2">read more</p>
         </Link>
     )
 }

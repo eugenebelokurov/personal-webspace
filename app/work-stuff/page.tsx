@@ -4,7 +4,7 @@ import { getWorkStuff } from "./utils";
 
 export default async function WorkStuff() {
 
-    const workStuffPosts = await getWorkStuff()
+    const workStuffPosts = await getWorkStuff(2)
 
     return (
         <div
@@ -14,7 +14,7 @@ export default async function WorkStuff() {
                 <Link href="/">Home</Link>
                 <p>/</p>
                 <p className="text-[#1AA809]">All cases</p>
-            </div> 
+            </div>
             <h1>My case studies</h1>
             <div
                 className="flex flex-col gap-2"

@@ -5,7 +5,7 @@ import Notes from "../files/notes.webp";
 
 export default function NotesThoughts() {
     return (
-        <div className="md:col-span-5 md:pr-2">
+        <div className="md:col-span-3 md:pr-2">
           <div className="flex flex-row justify-between border-b-2 border-black mb-4">
             <Image 
               src={Notes}

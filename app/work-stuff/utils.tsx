@@ -8,7 +8,6 @@ function getMDXFiles(dir: string) {
     return files
 }
 
-//TODO: return ordered from newest to oldest
 export async function getWorkStuff(numberOfPosts?: number) {
 
     //TODO: get dir as a parameter

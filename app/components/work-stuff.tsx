@@ -8,10 +8,10 @@ import CaseStudy from "./case-study"
 import CopyEmailButton from "./copy-email";
 
 export default async function WorkStuff() {
-    const workStuff = await getWorkStuff(3)
+    const workStuff = await getWorkStuff(2)
 
     return (
-        <div className="md:col-span-5 md:pr-2 h-full md:overflow-auto">
+        <div className="md:col-span-3 md:pr-2 h-full md:overflow-auto">
           <div className="flex flex-row justify-between border-b-2 border-black bg-[#ffffff] md:sticky md:top-0">
             <Image 
               src={Work}

@@ -4,7 +4,7 @@ import Public from "../files/public.webp"
 
 export default function PublicProfile() {
     return (
-        <div className="md:col-span-5">
+        <div className="md:col-span-3">
             <div className="flex flex-row justify-between border-b-2 border-black">
                 <Image 
                     src={Public}
@@ -13,16 +13,24 @@ export default function PublicProfile() {
                 />
                 <p>public profile</p>
             </div>
-            <div>
-                <div className="flex flex-row w-full gap-4 my-4">
-                    <video className="w-[240px] h-auto" width="20" height="40" preload="auto" autoPlay loop muted playsInline>
-                    <source src="/1sec.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                    </video>
-                    <p className="">every (almost) day i record a video of what i do. every month i edit a video with one second picked from each day. it helps me to reflect on my life journey.</p>
+            <div className="flex flex-col w-full gap-4 my-4">
+                <video className="w-auto h-auto" preload="auto" autoPlay loop muted playsInline>
+                <source src="/1sec.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+                </video>
+                <div className="flex flex-col gap-4">
+                    <p className="">Every (almost) day i record a video of what i do. every month i edit a video with one second picked from each day. it helps me to reflect on my life journey.</p>
+                    <a 
+                        href="https://www.instagram.com/evgenybelokurov/" target="_blank" 
+                        className="underline underline-offset-6 mb-2"
+                    >
+                        watch more of that
+                    </a>
                 </div>
-                <a href="https://www.instagram.com/evgenybelokurov/" target="_blank" className="underline underline-offset-6 mb-2">watch more of that</a>
             </div>
+            <div
+                className="border-t border-1 border-dashed border-neutral-600"
+            />
             <div className="flex flex-col gap-4 my-4">
                 <p>digital trail</p>
                 <ul>

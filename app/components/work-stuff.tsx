@@ -2,8 +2,11 @@ import Image from "next/image"
 import Link from "next/link";
 
 import { getWorkStuff } from "../work-stuff/utils";
+import SectionHeader from "./section-header"
+
 
 import Work from "../files/work.webp"
+import MulberryLeaf from "../files/mulberry-leaf.webp"
 import CaseStudy from "./case-study"
 import CopyEmailButton from "./copy-email";
 
@@ -12,14 +15,7 @@ export default async function WorkStuff() {
 
     return (
         <div className="md:col-span-3 md:pr-2 h-full md:overflow-auto">
-          <div className="flex flex-row justify-between border-b-2 border-black bg-[#ffffff] md:sticky md:top-0">
-            <Image 
-              src={Work}
-              alt="Work image"
-              height={64}
-            />
-            <p>work stuff</p>
-          </div>
+          <SectionHeader title="work stuff" alt="Work Image" img={MulberryLeaf} />
           <div className="flex flex-col gap-4 my-4">
             <p>
               here I list selected work which should give you a glimpse into my process and ui skills. 

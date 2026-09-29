@@ -1,18 +1,13 @@
 import Image from "next/image"
 
 import Public from "../files/public.webp"
+import BirchLeaf from "../files/birch-leaf.webp"
+import SectionHeader from "./section-header"
 
 export default function PublicProfile() {
     return (
         <div className="md:col-span-3">
-            <div className="flex flex-row justify-between border-b-2 border-black">
-                <Image 
-                    src={Public}
-                    alt="Public image"
-                    height={64}
-                />
-                <p>public profile</p>
-            </div>
+            <SectionHeader title="pulic profile" alt="Public image" img={BirchLeaf} />
             <div className="flex flex-col w-full gap-4 my-4">
                 <video className="w-auto h-auto" preload="auto" autoPlay loop muted playsInline>
                 <source src="/1sec.mp4" type="video/mp4" />

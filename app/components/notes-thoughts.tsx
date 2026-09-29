@@ -1,6 +1,3 @@
-import Image from "next/image"
-
-import Notes from "../files/notes.webp";
 import BananaLeaf from "../files/banana-leaf.webp"
 
 import SectionHeader from "./section-header"

@@ -1,11 +1,8 @@
-import Image from "next/image"
 import Link from "next/link";
 
 import { getWorkStuff } from "../work-stuff/utils";
 import SectionHeader from "./section-header"
 
-
-import Work from "../files/work.webp"
 import MulberryLeaf from "../files/mulberry-leaf.webp"
 import CaseStudy from "./case-study"
 import CopyEmailButton from "./copy-email";

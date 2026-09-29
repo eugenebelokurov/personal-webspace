@@ -1,6 +1,3 @@
-import Image from "next/image"
-
-import Public from "../files/public.webp"
 import BirchLeaf from "../files/birch-leaf.webp"
 import SectionHeader from "./section-header"
 

@@ -9,6 +9,12 @@ const components: MDXComponents = {
                       >
                         {children}
                       </ul>,
+  ol: ({children}) => <ol
+                        style={{listStyleType: 'decimal', listStylePosition: 'outside',}}
+                        className="marker:text-[#00AC00] pl-8"
+                      >
+                        {children}
+                      </ol>,
   li: ({children}) => <li
                         className="mb-2 font-medium leading-[1.4]"
                       >

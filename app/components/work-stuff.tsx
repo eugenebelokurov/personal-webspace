@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { getWorkStuff } from "../work-stuff/utils";
 import SectionHeader from "./section-header"
+import ExternalLink from "./link-external";
 
 import MulberryLeaf from "../files/mulberry-leaf.webp"
 import CaseStudy from "./case-study"
@@ -17,8 +18,9 @@ export default async function WorkStuff() {
             <p>
               Here I list selected work which should give you a glimpse into my process and ui skills. 
               I’m always happy to chat with new people, whether you already work on something, or toying with ideas. 
-              List of my services should serve as a good conversation starter. 
-              Grab <a target="_blank" href="/eugene-cv.pdf" className="underline underline-offset-4 decoration-dotted">my CV</a> or <CopyEmailButton/>.
+              Grab{" "}
+              <ExternalLink href="/eugene-cv.pdf" content="my CV"/>{" "}
+              or <CopyEmailButton/>.
             </p>
               <div
                 className="border-t border-1 border-dashed border-neutral-600"
